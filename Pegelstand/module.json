@@ -1,14 +1,14 @@
 {
-    "id": "{FE7E3450-1CB4-4DCA-B519-C03E15367EF7}",
+    "id": "{1BB853CC-67CE-41BC-801F-33359361D6CB}",
     "name": "SymconPegelstand",
     "type": 3,
     "vendor": "",
     "aliases": 
     [
-        „Pegelstandsanzeige“
+        "Pegelstandsanzeige"
     ],
     "parentRequirements": [],
     "childRequirements": [],
     "implemented": [],
-    "prefix": „PGL“
+    "prefix": "PGL"
 }
