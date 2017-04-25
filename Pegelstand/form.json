@@ -1,0 +1,20 @@
+{
+  "elements":
+  [
+
+    { "type": "Label", "label": "##### Pegelanzeige v1.1  #####" },
+    { "type": "Label", "label": "Fussball-Liga ausw‰hlen:"},
+    { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
+    { "type": "Label", "label": "Intervall in welchem die Tabelle aktualisiert wird:" },
+    { "type": "IntervalBox", "name": "Intervall", "caption": "Sekunden" },
+    { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
+    { "name": „PegelstandURL“, "type": "ValidationTextBox", "caption": "PegelstandURL“, „value“ : „https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/KONSTANZ/W/currentmeasurement.json“ }
+
+  ],
+  "actions":
+  [
+
+    { "type": "Button", "label": "Update", "onClick": "BLT_Update($id);" }
+
+  ]
+}
