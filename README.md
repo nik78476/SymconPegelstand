@@ -13,6 +13,10 @@
 
 ## 1. Funktionsumfang
 
+Kleines Modul, dass den Pegelstand von Mess-Stationen von www.pegelonline.de ausliest
+und als Variablen anzeigt. Die Stationen koennen hier ausgelesen werden:
+https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/
+
 
 
 ## 2. Systemanforderungen
@@ -29,4 +33,8 @@ Die neue Instanz findet ihr dort, wo ihr sie angelegt habt.
 
 ## 4. Befehlsreferenz
 
+keine Befehle
+
 ## 5. Changelog
+
+v1.0 first release
