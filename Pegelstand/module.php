@@ -1,5 +1,5 @@
 <?
-class Pegelstand extends IPSModule
+class SymconPegelstand extends IPSModule
 {
 
     public function Create()
