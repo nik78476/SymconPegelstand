@@ -13,7 +13,7 @@
 
 ## 1. Funktionsumfang
 
-Kleines Modul, dass den Pegelstand von Mess-Stationen von www.pegelonline.de ausliest
+Kleines Modul, dass den Pegelstand von Mess-Stationen von https://www.pegelonline.wsv.de/ ausliest
 und als Variablen anzeigt. Die Stationen koennen hier ausgelesen werden:
 https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/
 
