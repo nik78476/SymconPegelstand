@@ -91,7 +91,7 @@ class SymconPegelstand extends IPSModule
 	{
 		if($this->ReadPropertyBoolean("Debug"))
 		{
-			IPS_LogMessage($this->ReadPropertyBoolean("ModuleName"), $data);
+			IPS_LogMessage($this->ReadPropertyString("ModuleName"), $data);
 		}
 	}
     protected function RegisterTimer($Name, $Interval, $Script)
