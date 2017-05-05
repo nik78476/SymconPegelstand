@@ -18,9 +18,9 @@ und als Variablen anzeigt. Die Stationen koennen hier ausgelesen werden:
 https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/
 
 In der Konfiguration muss dann der String in der Form
-https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/NAME DER STATION/W/currentmeasurement.json
+'https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/NAME DER STATION/W/currentmeasurement.json'
 eingetragen werden. Beispiel für Deggendorf:
-https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/DEGGENDORF/W/currentmeasurement.json
+'https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/DEGGENDORF/W/currentmeasurement.json'
 
 
 ## 2. Systemanforderungen
