@@ -16,7 +16,7 @@ class SymconPegelstand extends IPSModule
         $this->RegisterVariableInteger("Tendenz", 0);
 		$this->RegisterVariableFloat("Pegelaktuell", 333.0);
 		
-        $this->RegisterTimer("UpdatePegelstand", 0, 'BLT_Update($_IPS[\'TARGET\']);');
+        $this->RegisterTimer("UpdatePegelstand", 0, 'PGL_Update($_IPS[\'TARGET\']);');
     }
 
     public function Destroy()
