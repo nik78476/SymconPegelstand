@@ -6,6 +6,8 @@
     { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
     { "type": "Label", "label": "Intervall in welchem die Daten aktualisiert werden:" },
     { "type": "IntervalBox", "name": "Intervall", "caption": "Sekunden" },
+    { "type": "CheckBox", "name": "Debug", "caption": "Debugausgabe in 'Meldungen'" },
+
     { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
     { "name": "PegelstandURL", "type": "ValidationTextBox", "caption": "PegelstandURL", "value" : "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/KONSTANZ/W/currentmeasurement.json" }
 
