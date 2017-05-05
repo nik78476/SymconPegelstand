@@ -42,11 +42,32 @@ class SymconPegelstand extends IPSModule
 		$data = @file_get_contents($pegelUrl);
 		
 		$pegelStandAktuell = 334.1;
-		$this->SetValueString("Pegelaktuell", $pegelStandAktuell);
+		$this->SetValueFloat("Pegelaktuell", $pegelStandAktuell);
 		$pegelTendenzAktuell = 1;
-		$this->SetValueString("Tendenz", $pegelTendenzAktuell);
+		$this->SetValueInt("Tendenz", $pegelTendenzAktuell);
     }
 
+	private function SetValueInt($Ident, $Value)
+	{
+    		$id = $this->GetIDforIdent($Ident);
+    		if (GetValueInteger($id) <> $Value)
+    		{
+    				SetValueInteger($id, $Value);
+    				return true;
+    		}
+    		return false;
+  	}
+	
+	private function SetValueFloat($Ident, $Value)
+	{
+    		$id = $this->GetIDforIdent($Ident);
+    		if (GetValueFloat($id) <> $Value)
+    		{
+    				SetValueFloat($id, $Value);
+    				return true;
+    		}
+    		return false;
+  	}
    
     private function SetValueString($Ident, $Value)
     {
