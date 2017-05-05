@@ -14,13 +14,7 @@
 ## 1. Funktionsumfang
 
 Kleines Modul, dass den Pegelstand von Mess-Stationen von https://www.pegelonline.wsv.de/ ausliest
-und als Variablen anzeigt. Die Stationen koennen hier ausgelesen werden:
-https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/
-
-In der Konfiguration muss dann der String in der Form
-`https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/NAME DER STATION/W/currentmeasurement.json`
-eingetragen werden. Beispiel für Deggendorf:
-`https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/DEGGENDORF/W/currentmeasurement.json`
+und als Variablen anzeigt. 
 
 
 ## 2. Systemanforderungen
@@ -33,6 +27,17 @@ eingetragen werden. Beispiel für Deggendorf:
 `https://github.com/nik78476/SymconPegelstand.git`
 
 Die neue Instanz findet ihr dort, wo ihr sie angelegt habt.
+Die Stationen koennen hier ausgelesen werden:
+https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/
+
+In der Konfiguration muss dann der String in der Form
+
+`https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/<STATIONSNAME>/W/currentmeasurement.json`
+
+eingetragen werden. Beispiel für Deggendorf:
+
+`https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/DEGGENDORF/W/currentmeasurement.json`
+
 
 
 ## 4. Befehlsreferenz
