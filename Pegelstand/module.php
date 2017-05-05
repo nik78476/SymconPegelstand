@@ -14,7 +14,7 @@ class Pegelstand extends IPSModule
         $this->RegisterPropertyString("PegelstandURL", "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/KONSTANZ/W/currentmeasurement.json");
         $this->RegisterPropertyInteger("Intervall", 1800);
 
-        $this->RegisterTimer("UpdatePegelstand“, 0, 'BLT_Update($_IPS[\'TARGET\']);');
+        $this->RegisterTimer("UpdatePegelstand", 0, 'BLT_Update($_IPS[\'TARGET\']);');
     }
 
     public function Destroy()
