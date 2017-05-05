@@ -38,12 +38,18 @@ class SymconPegelstand extends IPSModule
 
     public function Update()
     {
-        $pegelUrl = $this->ReadPropertyString("PegelstandURL");
-		$data = @file_get_contents($pegelUrl);
+        IPS_LogMessage($_IPS['SELF'], "Pegelstand wird abgefragt.");
 		
-		$pegelStandAktuell = 334.1;
+		$pegelUrl = $this->ReadPropertyString("PegelstandURL");
+		$pegelDataJSON = @file_get_contents($pegelUrl);
+		$pegelData = json_decode($pegelDataJSON);
+		
+		$pegelStandAktuell = $pegelData->value;
+		IPS_LogMessage($_IPS['SELF'], "Pegelaktuell: ". $pegelStandAktuell. " ");
 		$this->SetValueFloat("Pegelaktuell", $pegelStandAktuell);
-		$pegelTendenzAktuell = 1;
+		
+		$pegelTendenzAktuell = $pegelData->trend;
+		IPS_LogMessage($_IPS['SELF'], "Pegeltendenz: ". $pegelTendenzAktuell. " ");
 		$this->SetValueInt("Tendenz", $pegelTendenzAktuell);
     }
 
