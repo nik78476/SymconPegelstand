@@ -33,9 +33,8 @@ https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/
 In der Konfigurationsform kann die jeweilige Mess-Station ausgewählt werden.
 Defaultwert ist der Pegelstand in KONSTANZ.
 
-[[https://github.com/nik78476/SymconPegelstand/blob/master/Screenshots/Pegelstand-moduleConfiguration.png|alt=Konfiguration]]
-
-[[https://github.com/nik78476/SymconPegelstand/blob/master/Screenshots/Pegelstand-Instance.png|alt=Konfiguration]]
+Im Ordner Screenshots sind zwei Bilder hinterlegt: Module-Konfiguration und
+wie die Instanz dann aussieht. Die Profile für das Webfront müssen selbst erzeugt werden.
 
 Pegelstand aktuell : Wert in cm
 Tendenz : -1 fallend / 0 gleichbleibend / 1 steigend
