@@ -39,10 +39,11 @@ Intervall | Angaben in Millisekunden (Default: 14400)
 Mess-Station | Auswahl der Mess-Station (Default: KONSTANZ))
 
 
-
 Im Ordner Screenshots sind zwei Bilder hinterlegt: Module-Konfiguration und
 wie die Instanz dann aussieht. 
 Die Profile für das Webfront müssen selbst erzeugt werden.
+
+Pegelstand aktuell : Wert in cm
 
 Tendenz | Beschreibung
 ------ | ---------------------------------
@@ -50,9 +51,6 @@ Tendenz | Beschreibung
 0      | gleichbleibend
 1      | steigend
 
-Pegelstand aktuell : Wert in cm
-
-Tendenz : -1 fallend / 0 gleichbleibend / 1 steigend
 
 
 ## 4. Befehlsreferenz
