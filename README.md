@@ -58,4 +58,7 @@ keine Befehle
 ## 5. Changelog
 
 v1.0 first release
+
 v1.1 Auswahl Mess-Station über ComboBox
+
+v1.2 Update mit kleineren Bugfixes, Codebereinigung und Übergabe von Standard-Variablenprofilen
