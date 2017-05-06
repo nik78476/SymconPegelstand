@@ -36,7 +36,7 @@ Defaultwert ist der Pegelstand in KONSTANZ.
 Defaultwert für die Aktualisierung ist 14400 Millisekunden (4Stunden)
 
 
-Im Ordner images sind zwei Bilder hinterlegt: Module-Konfiguration und
+Im Ordner Screenshots sind zwei Bilder hinterlegt: Module-Konfiguration und
 wie die Instanz dann aussieht. 
 Die Profile für das Webfront müssen selbst erzeugt werden.
 
