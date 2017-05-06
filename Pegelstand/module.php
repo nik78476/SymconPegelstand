@@ -15,6 +15,9 @@ class SymconPegelstand extends IPSModule
         $this->RegisterVariableInteger("Tendenz", "Tendenz","",1);
 		$this->RegisterVariableFloat("Pegelaktuell", "Pegelstand aktuell","",0);
 		
+		$this->CreateVarProfilePGLTendenz();
+		$this->CreateVarProfilePGLPegelstand();
+		
         $this->RegisterTimer("UpdatePegelstand", 14400, 'PGL_Update($_IPS[\'TARGET\']);');
     }
 
@@ -71,6 +74,28 @@ class SymconPegelstand extends IPSModule
     		}
     		return false;
   	}
+	
+	private function CreateVarProfilePGLTendenz() {
+		if (!IPS_VariableProfileExists("PGL.Tendenz")) {
+			IPS_CreateVariableProfile("PGL.Tendenz", 1);
+			IPS_SetVariableProfileValues("PGL.Tendenz", -1, 1, 1);
+			IPS_SetVariableProfileAssociation("PGL.Tendenz", -1, "fallend", "", -1);
+			IPS_SetVariableProfileAssociation("PGL.Tendenz", 0, "gleichbleibend", "", -1);
+			IPS_SetVariableProfileAssociation("PGL.Tendenz", 1, "steigend", "", -1);
+		 }
+	}
+	
+	private function CreateVarProfilePGLPegelstand() {
+		if (!IPS_VariableProfileExists("PGL.Pegelstand")) {
+			IPS_CreateVariableProfile("PGL.Pegelstand", 2);
+			IPS_SetVariableProfileValues("PGL.Pegelstand", -1, 1, 1);
+			IPS_SetVariableProfileAssociation("PGL.Pegelstand", 0, "%.1f", "", -1);
+			IPS_SetVariableProfileAssociation("PGL.Pegelstand", 330, "%.1f", "", -1);
+			IPS_SetVariableProfileAssociation("PGL.Pegelstand", 400, "%.1f", "", -1);
+			IPS_SetVariableProfileIcon("PGL.Pegelstand",  "Wave");
+		 }
+	}
+	
 	
 }
 ?>
