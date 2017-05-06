@@ -30,15 +30,25 @@ Die neue Instanz findet ihr dort, wo ihr sie angelegt habt.
 Die Stationen koennen hier ausgelesen werden:
 https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/
 
-In der Konfigurationsform kann die jeweilige Mess-Station ausgewählt werden.
-Defaultwert ist der Pegelstand in KONSTANZ.
+In der Konfigurationsform kann die jeweilige Mess-Station ausgewählt werden
+und der Intervall für die Aktualisierung eingerichtet werden.
 
-Defaultwert für die Aktualisierung ist 14400 Millisekunden (4Stunden)
+Parameter | Beschreibung
+------ | ---------------------------------
+Intervall | Angaben in Millisekunden (Default: 14400)
+Mess-Station | Auswahl der Mess-Station (Default: KONSTANZ))
+
 
 
 Im Ordner Screenshots sind zwei Bilder hinterlegt: Module-Konfiguration und
 wie die Instanz dann aussieht. 
 Die Profile für das Webfront müssen selbst erzeugt werden.
+
+Tendenz | Beschreibung
+------ | ---------------------------------
+-1     | fallend
+0      | gleichbleibend
+1      | steigend
 
 Pegelstand aktuell : Wert in cm
 
