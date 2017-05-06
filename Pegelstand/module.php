@@ -30,7 +30,7 @@ class SymconPegelstand extends IPSModule
         parent::ApplyChanges();
         
         $this->Update();
-        $this->SetTimerInterval("UpdatePegelstand", $this->ReadPropertyInteger("Intervall")*1000);
+        $this->SetTimerInterval("UpdatePegelstand", $this->ReadPropertyInteger("Intervall"));
     }
 
     public function Update()

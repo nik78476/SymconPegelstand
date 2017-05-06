@@ -32,7 +32,8 @@ https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/
 
 In der Konfigurationsform kann die jeweilige Mess-Station ausgewählt werden.
 Defaultwert ist der Pegelstand in KONSTANZ.
-Defaultwert für die Aktualisierung ist 14400 (4Stunden)
+
+Defaultwert für die Aktualisierung ist 14400 Millisekunden (4Stunden)
 
 
 Im Ordner images sind zwei Bilder hinterlegt: Module-Konfiguration und
