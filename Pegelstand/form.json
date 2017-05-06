@@ -9,7 +9,6 @@
     { "type": "CheckBox", "name": "Debug", "caption": "Debugausgabe in 'Meldungen'" },
 
     { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
-    { "name": "PegelstandURL", "type": "ValidationTextBox", "caption": "PegelstandURL", "value" : "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/KONSTANZ/W/currentmeasurement.json" },
 	{ "type": "Select", "name": "PEGELSTATION", "caption": "Mess-Station",
 "options": [
 { "label": "EITZE", "value":"EITZE" },

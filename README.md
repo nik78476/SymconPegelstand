@@ -30,14 +30,7 @@ Die neue Instanz findet ihr dort, wo ihr sie angelegt habt.
 Die Stationen koennen hier ausgelesen werden:
 https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/
 
-In der Konfiguration muss dann der String in der Form
-
-`https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/<STATIONSNAME>/W/currentmeasurement.json`
-
-eingetragen werden. Beispiel für Deggendorf:
-
-`https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/DEGGENDORF/W/currentmeasurement.json`
-
+In der Konfigurationsform kann die jeweilige Mess-Station ausgewählt werden.
 
 
 ## 4. Befehlsreferenz
@@ -47,3 +40,4 @@ keine Befehle
 ## 5. Changelog
 
 v1.0 first release
+v1.1 Auswahl Mess-Station über ComboBox
