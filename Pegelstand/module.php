@@ -10,12 +10,12 @@ class SymconPegelstand extends IPSModule
         //These lines are parsed on Symcon Startup or Instance creation
         //You cannot use variables here. Just static values.
         $this->RegisterPropertyString("PEGELSTATION", "KONSTANZ");
-		$this->RegisterPropertyInteger("Intervall", 1800);
+		$this->RegisterPropertyInteger("Intervall", 14400);
 		
         $this->RegisterVariableInteger("Tendenz", "Tendenz","",1);
 		$this->RegisterVariableFloat("Pegelaktuell", "Pegelstand aktuell","",0);
 		
-        $this->RegisterTimer("UpdatePegelstand", 1800, 'PGL_Update($_IPS[\'TARGET\']);');
+        $this->RegisterTimer("UpdatePegelstand", 14400, 'PGL_Update($_IPS[\'TARGET\']);');
     }
 
     public function Destroy()
