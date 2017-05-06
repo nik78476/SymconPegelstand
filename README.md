@@ -39,8 +39,6 @@ Intervall | Angaben in Millisekunden (Default: 14400)
 Mess-Station | Auswahl der Mess-Station (Default: KONSTANZ))
 
 
-Die Profile für das Webfront müssen selbst erzeugt werden.
-
 Pegelstand aktuell : Wert in cm
 
 Tendenz | Beschreibung
@@ -49,6 +47,7 @@ Tendenz | Beschreibung
 0      | gleichbleibend
 1      | steigend
 
+Standardprofile für Pegelstand (PGL.Pegelstand) und Tendenz (PGL.Tendenz) sind hinterlegt.
 
 
 ## 4. Befehlsreferenz
