@@ -39,8 +39,6 @@ Intervall | Angaben in Millisekunden (Default: 14400)
 Mess-Station | Auswahl der Mess-Station (Default: KONSTANZ))
 
 
-Im Ordner Screenshots sind zwei Bilder hinterlegt: Module-Konfiguration und
-wie die Instanz dann aussieht. 
 Die Profile für das Webfront müssen selbst erzeugt werden.
 
 Pegelstand aktuell : Wert in cm
