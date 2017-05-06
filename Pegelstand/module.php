@@ -12,7 +12,7 @@ class SymconPegelstand extends IPSModule
 
 
         $this->RegisterPropertyString("PegelstandURL", "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/DEGGENDORF/W/currentmeasurement.json");
-        $this->RegisterPropertyString("PEGELSTATION");
+        $this->RegisterPropertyString("PEGELSTATION", "");
 		$this->RegisterPropertyInteger("Intervall", 1800);
 		$this->RegisterPropertyBoolean("Debug", true);
 		$this->RegisterPropertyString("ModuleName", "SymconPegelstand");
