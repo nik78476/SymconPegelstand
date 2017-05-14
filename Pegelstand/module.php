@@ -44,7 +44,11 @@ class SymconPegelstand extends IPSModule
 		
 		$pegelDataJSON = @file_get_contents($pegelUrl);
 		$pegelData = json_decode($pegelDataJSON);
-		
+		if ($pegelData == NULL)
+		{
+			echo 'Error on read Pegelonline';
+			return;
+		}
 		$pegelStandAktuell = $pegelData->value;
 		$this->SetValueFloat("Pegelaktuell", $pegelStandAktuell);
 		
@@ -66,17 +70,6 @@ class SymconPegelstand extends IPSModule
     	return true;
   	}
    
-    private function SetValueString($Ident, $Value)
-    {
-    		$id = $this->GetIDforIdent($Ident);
-    		if (GetValueString($id) <> $Value)
-    		{
-    				SetValueString($id, $Value);
-    				return true;
-    		}
-    		return false;
-  	}
-	
 	private function CreateVarProfilePGLTendenz() {
 		if (!IPS_VariableProfileExists("PGL.Tendenz")) {
 			IPS_CreateVariableProfile("PGL.Tendenz", 1);
