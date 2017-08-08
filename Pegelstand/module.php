@@ -44,7 +44,12 @@ class SymconPegelstand extends IPSModule
 		
 		$pegelDataJSON = @file_get_contents($pegelUrl);
 		$pegelData = json_decode($pegelDataJSON);
-		
+		if ($pegelData == NULL)
+		{
+			echo 'Error on read Pegelonline';
+			return;
+		}
+
 		$pegelStandAktuell = $pegelData->value;
 		$this->SetValueFloat("Pegelaktuell", $pegelStandAktuell);
 		
