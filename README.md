@@ -1,5 +1,11 @@
 ### IP-Symcon Modul Pegelstände
 
+[![Version](https://img.shields.io/badge/Symcon_Version-4.x-red.svg)](https://www.symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/sdk-php/)
+[![Version](https://img.shields.io/badge/Symcon_Version-5.0-red.svg)](https://www.symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/sdk-php/)
+![Version](https://img.shields.io/badge/Modul_Version-0.3-blue.svg)
+![Version](https://img.shields.io/badge/Code-PHP-blue.svg)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-green.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![StyleCI](https://github.styleci.io/repos/136796530/shield?branch=master)](https://github.styleci.io/repos/136796530)
 ## Dokumentation
 
 **Inhaltsverzeichnis**
@@ -18,7 +24,7 @@ und als Variablen anzeigt.
 
 
 ## 2. Systemanforderungen
-- IP-Symcon ab Version 4.x
+- IP-Symcon ab Version 4.x, 5.0
 
 
 ## 3. Installation
@@ -54,10 +60,30 @@ Standardprofile für Pegelstand (PGL.Pegelstand) und Tendenz (PGL.Tendenz) sind 
 
 keine Befehle
 
+
 ## 5. Changelog
 
-v1.0 first release
+Version     | Datum      | Beschreibung
+----------- | -----------| -------------------
+0.1        | xx.xx.xxxx | Modulerstellung
+0.2       | xx.xx.xxxx | Auswahl Mess-Station über ComboBox
+0.3        | xx.xx.xxxx | Update mit kleineren Bugfixes, Codebereinigung und Übergabe von Standard-Variablenprofilen
+0.4        | 29.07.2018 | Doku update
 
-v1.1 Auswahl Mess-Station über ComboBox
+### 7. GUIDs
 
-v1.2 Update mit kleineren Bugfixes, Codebereinigung und Übergabe von Standard-Variablenprofilen
+__Modul GUIDs__:
+
+ Name       | GUID                                   | Bezeichnung  |
+------------| -------------------------------------- | -------------|
+Bibliothek  | {1BB853CC-67CE-41BC-801F-33359361D6CB} | Library GUID |
+Modul       | {1BB853CC-67CE-41BC-801F-33359361D6CB} | Module GUID  |
+
+### 8. Lizenz
+
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+### 9. Author
+
+Mike Fröhlich
+https://github.com/nik78476
