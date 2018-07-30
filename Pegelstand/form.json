@@ -7,7 +7,7 @@
     { "type": "Label", "label": "Intervall in welchem die Daten aktualisiert werden:" },
     { "type": "IntervalBox", "name": "Intervall", "caption": "Millisekunden" },
 
-    { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
+    { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },      
 	{ "type": "Select", "name": "PEGELSTATION", "caption": "Mess-Station",
 "options": [
 { "label": "AALBUDE", "value":"AALBUDE" },
@@ -665,7 +665,10 @@
 { "label": "Ziegelhausen AMS", "value":"Ziegelhausen AMS" },
 { "label": "ZOLLENSPIEKER", "value":"ZOLLENSPIEKER" }
 ]
-}
+},
+{ "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
+{ "type": "CheckBox", "name": "debug", "caption": "Debug-Ausgaben im Log aktivieren" }
+      
 
   ],
   "actions":

@@ -14,6 +14,7 @@ class SymconPegelstand extends IPSModule
 
         $this->RegisterPropertyString("PEGELSTATION", "KONSTANZ");
 		$this->RegisterPropertyInteger("Intervall", 14400);
+        $this->RegisterPropertyBoolean("debug", true);
 		
         $this->RegisterVariableInteger("Tendenz", "Tendenz","PGL.Tendenz",1);
 		$this->RegisterVariableFloat("Pegelaktuell", "Pegelstand aktuell","PGL.Pegelstand",0);
@@ -41,8 +42,11 @@ class SymconPegelstand extends IPSModule
     public function Update()
     {
  		$pegelUrl = "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/" .$this->ReadPropertyString("PEGELSTATION") ."/W/currentmeasurement.json";
-		
+        if($this->ReadPropertyString("debug")) logMessage( "pegelURL: " .$pegelUrl);
+        
 		$pegelDataJSON = @file_get_contents($pegelUrl);
+        if($this->ReadPropertyString("debug")) logMessage( "pegelURL: " .$pegelDataJSON);
+        
 		$pegelData = json_decode($pegelDataJSON);
 		if ($pegelData == NULL)
 		{
@@ -102,7 +106,10 @@ class SymconPegelstand extends IPSModule
 			IPS_SetVariableProfileIcon("PGL.Pegelstand",  "Wave");
 		 }
 	}
-	
+    
+    private function logMessage( $message ){
+        IPS_LogMessage($_IPS['SELF'], $message);
+	}
 	
 }
 ?>
