@@ -42,10 +42,10 @@ class SymconPegelstand extends IPSModule
     public function Update()
     {
  		$pegelUrl = "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/" .$this->ReadPropertyString("PEGELSTATION") ."/W/currentmeasurement.json";
-        if($this->ReadPropertyString("debug")) $this->logMessage( "pegelURL: " .$pegelUrl);
+        if($this->ReadPropertyString("debug")) IPS_LogMessage($_IPS['SELF'], $pegelUrl);
         
 		$pegelDataJSON = @file_get_contents($pegelUrl);
-        if($this->ReadPropertyString("debug")) $this->logMessage( "pegelURL: " .$pegelDataJSON);
+        if($this->ReadPropertyString("debug")) IPS_LogMessage($_IPS['SELF'], $pegelDataJSON);
         
 		$pegelData = json_decode($pegelDataJSON);
 		if ($pegelData == NULL)
@@ -105,10 +105,6 @@ class SymconPegelstand extends IPSModule
 			IPS_SetVariableProfileAssociation("PGL.Pegelstand", 400, "%.1f", "", -1);
 			IPS_SetVariableProfileIcon("PGL.Pegelstand",  "Wave");
 		 }
-	}
-    
-    private function logMessage( $message ){
-        IPS_LogMessage($_IPS['SELF'], $message);
 	}
 	
 }
