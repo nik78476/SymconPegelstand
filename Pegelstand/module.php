@@ -42,10 +42,10 @@ class SymconPegelstand extends IPSModule
     public function Update()
     {
  		$pegelUrl = "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/" .$this->ReadPropertyString("PEGELSTATION") ."/W/currentmeasurement.json";
-        if($this->ReadPropertyString("debug")) logMessage( "pegelURL: " .$pegelUrl);
+        if($this->ReadPropertyString("debug")) $this->logMessage( "pegelURL: " .$pegelUrl);
         
 		$pegelDataJSON = @file_get_contents($pegelUrl);
-        if($this->ReadPropertyString("debug")) logMessage( "pegelURL: " .$pegelDataJSON);
+        if($this->ReadPropertyString("debug")) $this->logMessage( "pegelURL: " .$pegelDataJSON);
         
 		$pegelData = json_decode($pegelDataJSON);
 		if ($pegelData == NULL)
