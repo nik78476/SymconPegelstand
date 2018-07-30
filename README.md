@@ -65,10 +65,8 @@ keine Befehle
 
 Version     | Datum      | Beschreibung
 ----------- | -----------| -------------------
-0.1        | xx.xx.xxxx | Modulerstellung
-0.2       | xx.xx.xxxx | Auswahl Mess-Station über ComboBox
-0.3        | xx.xx.xxxx | Update mit kleineren Bugfixes, Codebereinigung und Übergabe von Standard-Variablenprofilen
-0.4        | 29.07.2018 | Doku update
+1.1        | xx.xx.xxxx | Modulerstellung
+1.2        | 30.07.2018 | Doku update, Debug-Variable
 
 ### 7. GUIDs
 

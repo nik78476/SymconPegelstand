@@ -14,7 +14,7 @@ class SymconPegelstand extends IPSModule
 
         $this->RegisterPropertyString("PEGELSTATION", "KONSTANZ");
 		$this->RegisterPropertyInteger("Intervall", 14400);
-        $this->RegisterPropertyBoolean("debug", true);
+        $this->RegisterPropertyBoolean("debug", false);
 		
         $this->RegisterVariableInteger("Tendenz", "Tendenz","PGL.Tendenz",1);
 		$this->RegisterVariableFloat("Pegelaktuell", "Pegelstand aktuell","PGL.Pegelstand",0);

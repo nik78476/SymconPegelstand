@@ -2,7 +2,7 @@
   "elements":
   [
 
-    { "type": "Label", "label": "##### Pegelanzeige v1.1  #####" },
+    { "type": "Label", "label": "##### Pegelanzeige v1.2  #####" },
     { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
     { "type": "Label", "label": "Intervall in welchem die Daten aktualisiert werden:" },
     { "type": "IntervalBox", "name": "Intervall", "caption": "Millisekunden" },
