@@ -66,7 +66,10 @@ keine Befehle
 Version     | Datum      | Beschreibung
 ----------- | -----------| -------------------
 1.1        | xx.xx.xxxx | Modulerstellung
-1.2        | 30.07.2018 | Doku update, Debug-Variable
+1.2        | 30.07.2018 | Doku update
+1.3        | 31.07.2018 | Debug-Variable
+1.4        | 31.07.2018 | Aktualisierung der Vars für Pegeldaten
+
 
 ### 7. GUIDs
 

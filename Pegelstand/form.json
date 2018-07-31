@@ -2,7 +2,7 @@
   "elements":
   [
 
-    { "type": "Label", "label": "##### Pegelanzeige v1.2  #####" },
+    { "type": "Label", "label": "##### Pegelanzeige v1.4  #####" },
     { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
     { "type": "Label", "label": "Intervall in welchem die Daten aktualisiert werden:" },
     { "type": "IntervalBox", "name": "Intervall", "caption": "Millisekunden" },
@@ -674,7 +674,7 @@
   "actions":
   [
 
-    { "type": "Button", "label": "%20UPdate", "onClick": "PGL_%20UPdate($id);" }
+    { "type": "Button", "label": "Aktualisieren", "onClick": "PGL_%20UPdate($id);" }
 
   ]
 }
