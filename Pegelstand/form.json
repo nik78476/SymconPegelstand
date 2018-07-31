@@ -674,7 +674,7 @@
   "actions":
   [
 
-    { "type": "Button", "label": "Aktualisieren", "onClick": "PGL_%20UPdate($id);" }
+    { "type": "Button", "label": "Aktualisieren", "onClick": "PGL_UPdate($id);" }
 
   ]
 }
