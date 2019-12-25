@@ -24,11 +24,12 @@ und als Variablen anzeigt.
 
 
 ## 2. Systemanforderungen
-- IP-Symcon ab Version 4.x, 5.0
+- IP-Symcon ab Version 5.x++
 
 
 ## 3. Installation
-Über die Kern-Instanz "Module Control" folgende URL hinzufügen:
+Dieses Modul kann über den IPS Module Store bezogen werden oder
+über die Kern-Instanz "Module Control" folgende URL hinzufügen:
 
 `https://github.com/nik78476/SymconPegelstand.git`
 
@@ -69,6 +70,7 @@ Version     | Datum      | Beschreibung
 1.2        | 30.07.2018 | Doku update
 1.3        | 31.07.2018 | Debug-Variable
 1.4        | 31.07.2018 | Aktualisierung der Vars für Pegeldaten
+1.5        | 25.12.2019 | Bugfix, https://www.symcon.de/forum/threads/34768-Pegelstandsanzeige-Modul/page4#34
 
 
 ### 7. GUIDs
