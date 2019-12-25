@@ -1,4 +1,4 @@
-<?
+<?php
 class SymconPegelstand extends IPSModule
 {
 
