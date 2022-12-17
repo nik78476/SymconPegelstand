@@ -53,11 +53,31 @@ class SymconPegelstand extends IPSModule
 			echo 'Error on read Pegelonline';
 			return;
 		}
-
-		$pegelStandAktuell = $pegelData->value;
-		$this->SetValueFloat("Pegelaktuell", $pegelStandAktuell);
+        
+        
+        $pegelStandAktuell = $pegelData->value;
+        $this->SetValueFloat("Pegelaktuell", $pegelStandAktuell);
 		
-		$pegelTendenzAktuell = $pegelData->trend;
+		// 2022-12-17 
+        // Es wird keine Tendenz mehr ausgegeben.
+        //$pegelTendenzAktuell = $pegelData->trend;
+        $pegelStandVorUpdate = $this->GetValue("Pegelaktuell");
+        
+        if( $pegelStandVorUpdate > $pegelStandAktuell){
+			$pegelTendenzAktuell = "-1";
+		}
+        if( $pegelStandVorUpdate = $pegelStandAktuell){
+			$pegelTendenzAktuell = "0";
+		}
+        if( $pegelStandVorUpdate < $pegelStandAktuell){
+			$pegelTendenzAktuell = "1";
+		}
+        else {
+			$pegelTendenzAktuell = "0";
+		}
+        
+        
+       
 		$this->SetValueInt("Tendenz", $pegelTendenzAktuell);
     }
 
