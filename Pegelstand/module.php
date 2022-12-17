@@ -54,31 +54,26 @@ class SymconPegelstand extends IPSModule
 			return;
 		}
         
-        
-        $pegelStandAktuell = $pegelData->value;
-        $this->SetValueFloat("Pegelaktuell", $pegelStandAktuell);
-		
-		// 2022-12-17 
+        // 2022-12-17 
         // Es wird keine Tendenz mehr ausgegeben.
         //$pegelTendenzAktuell = $pegelData->trend;
-        $pegelStandVorUpdate = $this->GetValue("Pegelaktuell");
+        $varPegelAktuell = $this->GetValue("Pegelaktuell");
+        $pegelStandAktuell = $pegelData->value;
+        $pegelTendenzAktuell = "0";
         
-        if( $pegelStandVorUpdate > $pegelStandAktuell){
+        if($this->ReadPropertyBoolean("debug")) IPS_LogMessage($_IPS['SELF'], "varPegelAktuell: " .$varPegelAktuell);
+        if($this->ReadPropertyBoolean("debug")) IPS_LogMessage($_IPS['SELF'], "Pegeldata: " .$pegelStandAktuell);
+        
+        if( $varPegelAktuell > $pegelStandAktuell){
 			$pegelTendenzAktuell = "-1";
 		}
-        if( $pegelStandVorUpdate = $pegelStandAktuell){
-			$pegelTendenzAktuell = "0";
-		}
-        if( $pegelStandVorUpdate < $pegelStandAktuell){
+        if( $varPegelAktuell < $pegelStandAktuell){
 			$pegelTendenzAktuell = "1";
 		}
-        else {
-			$pegelTendenzAktuell = "0";
-		}
-        
-        
-       
+		
+        $this->SetValueFloat("Pegelaktuell", $pegelStandAktuell);
 		$this->SetValueInt("Tendenz", $pegelTendenzAktuell);
+        
     }
 
 	private function SetValueInt($Ident, $Value)
