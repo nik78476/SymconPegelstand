@@ -19,12 +19,12 @@
 
 ## 1. Funktionsumfang
 
-Kleines Modul, dass den Pegelstand von Mess-Stationen von https://www.pegelonline.wsv.de/ ausliest
+Kleines Modul, welches den Pegelstand von Mess-Stationen von https://www.pegelonline.wsv.de/ ausliest
 und als Variablen anzeigt. 
 
 
 ## 2. Systemanforderungen
-- IP-Symcon ab Version 5.x++
+- IP-Symcon ab Version 6.x++
 
 
 ## 3. Installation
@@ -46,6 +46,8 @@ Intervall | Angaben in Millisekunden (Default: 14400)
 Mess-Station | Auswahl der Mess-Station (Default: KONSTANZ))
 
 
+
+
 Pegelstand aktuell : Wert in cm
 
 Tendenz | Beschreibung
@@ -55,6 +57,7 @@ Tendenz | Beschreibung
 1      | steigend
 
 Standardprofile für Pegelstand (PGL.Pegelstand) und Tendenz (PGL.Tendenz) sind hinterlegt.
+Ab Version 1.6 wird die Tendenz durch Vergleich des Vorgängerwertes berechnet.
 
 
 ## 4. Befehlsreferenz
@@ -71,6 +74,7 @@ Version     | Datum      | Beschreibung
 1.3        | 31.07.2018 | Debug-Variable
 1.4        | 31.07.2018 | Aktualisierung der Vars für Pegeldaten
 1.5        | 25.12.2019 | Bugfix, https://www.symcon.de/forum/threads/34768-Pegelstandsanzeige-Modul/page4#34
+1.6        | 18.12.2022 | Bugfix, https://community.symcon.de/t/pegelstandsanzeige-modul/44140/45
 
 
 ### 7. GUIDs
