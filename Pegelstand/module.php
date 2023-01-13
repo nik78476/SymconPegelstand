@@ -1,5 +1,5 @@
 <?php
-class SymconPegelstand extends IPSModule
+class Pegelstand extends IPSModule
 {
 
     public function Create()
