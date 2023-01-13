@@ -2,11 +2,10 @@
   "elements":
   [
 
-    { "type": "Label", "label": "Pegelanzeige v1.6" },
+    { "type": "Label", "label": "Pegelanzeige v1.7" },
     { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },
     { "type": "Label", "label": "Aktualisierungsintervall:" },
-    { "type": "IntervalBox", "name": "Intervall", "caption": "Millisekunden" },
-
+    { "type": "NumberSpinner", "name": "Intervall", "suffix": "Millisekunden" },
     { "type": "Label", "label": "----------------------------------------------------------------------------------------------------------------------------" },      
 	{ "type": "Select", "name": "PEGELSTATION", "caption": "Mess-Station",
 "options": [
