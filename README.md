@@ -75,6 +75,8 @@ Version     | Datum      | Beschreibung
 1.4        | 31.07.2018 | Aktualisierung der Vars für Pegeldaten
 1.5        | 25.12.2019 | Bugfix, https://www.symcon.de/forum/threads/34768-Pegelstandsanzeige-Modul/page4#34
 1.6        | 18.12.2022 | Bugfix, https://community.symcon.de/t/pegelstandsanzeige-modul/44140/45
+1.7        | 13.01.2023 | Bugfix
+
 
 
 ### 7. GUIDs

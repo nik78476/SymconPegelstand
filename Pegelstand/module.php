@@ -42,10 +42,10 @@ class SymconPegelstand extends IPSModule
     public function Update()
     {
  		$pegelUrl = "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/" .$this->ReadPropertyString("PEGELSTATION") ."/W/currentmeasurement.json";
-        if($this->ReadPropertyBoolean("debug")) IPS_LogMessage($_IPS['SELF'], $pegelUrl);
+        if($this->ReadPropertyBoolean("debug")) $this->LogMessage($pegelUrl, KL_DEBUG);
         
 		$pegelDataJSON = @file_get_contents($pegelUrl);
-        if($this->ReadPropertyBoolean("debug")) IPS_LogMessage($_IPS['SELF'], $pegelDataJSON);
+        if($this->ReadPropertyBoolean("debug")) $this->LogMessage($pegelDataJSON, KL_DEBUG);
         
 		$pegelData = json_decode($pegelDataJSON);
 		if ($pegelData == NULL)
@@ -63,8 +63,8 @@ class SymconPegelstand extends IPSModule
         $pegelStandAktuell = $pegelData->value;
         $pegelTendenzAktuell = "0";
 
-        if($this->ReadPropertyBoolean("debug")) IPS_LogMessage($_IPS['SELF'], "varPegelAktuell: " .$varPegelAktuell);
-        if($this->ReadPropertyBoolean("debug")) IPS_LogMessage($_IPS['SELF'], "Pegeldata: " .$pegelStandAktuell);
+        if($this->ReadPropertyBoolean("debug")) $this->LogMessage("varPegelAktuell: " .$varPegelAktuell, KL_DEBUG);
+        if($this->ReadPropertyBoolean("debug")) $this->LogMessage("Pegeldata: " .$pegelStandAktuell, KL_DEBUG);
 
         if( $varPegelAktuell > $pegelStandAktuell){
                         $pegelTendenzAktuell = "-1";
